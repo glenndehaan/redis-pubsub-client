@@ -1,0 +1,64 @@
+{
+  "name": "redis-pubsub-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "demo:watch": "nodemon --watch ./ --exec 'node ./demo/server.js'",
+    "demo": "node ./demo/server.js",
+    "test": "nyc --reporter=html --reporter=text mocha -R spec --recursive",
+    "test:watch": "mocha -R spec --recursive --watch",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint -c ./package.json ./src"
+  },
+  "author": {
+    "name": "Glenn de Haan",
+    "email": "glenn@dehaan.cloud",
+    "url": "https://glenndehaan.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glenndehaan/redis-pubsub-client.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "indent": [
+        "error",
+        4
+      ]
+    },
+    "extends": [
+      "eslint:recommended"
+    ]
+  },
+  "eslintIgnore": [
+    "*.test.js"
+  ],
+  "dependencies": {
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.9",
+    "eslint": "^6.7.2",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.1",
+    "nyc": "^14.1.1",
+    "should": "^13.2.3"
+  }
+}
