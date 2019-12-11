@@ -1,6 +1,6 @@
 # Redis Pub/Sub Client
 
-A way to define which browsers are supported in your express app
+A simple Redis Pub/Sub Client
 
 [![npm](https://img.shields.io/npm/v/redis-pubsub-client.svg)](https://www.npmjs.com/package/redis-pubsub-client) ![node](https://img.shields.io/node/v/redis-pubsub-client.svg) ![dependencies](https://david-dm.org/glenndehaan/redis-pubsub-client.svg) [![Build Status](https://travis-ci.org/glenndehaan/redis-pubsub-client.svg?branch=master)](https://travis-ci.org/glenndehaan/redis-pubsub-client) [![Coverage Status](https://coveralls.io/repos/github/glenndehaan/redis-pubsub-client/badge.svg?branch=master)](https://coveralls.io/github/glenndehaan/redis-pubsub-client?branch=master)
 

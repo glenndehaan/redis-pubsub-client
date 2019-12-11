@@ -1,7 +1,7 @@
 {
   "name": "redis-pubsub-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Redis Pub/Sub Client",
   "main": "src/index.js",
   "scripts": {
     "demo:watch": "nodemon --watch ./ --exec 'node ./demo/server.js'",
